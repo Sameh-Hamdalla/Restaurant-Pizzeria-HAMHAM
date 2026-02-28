@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reservierung bei Pizzeria HAMHAM - reservieren Sie Ihren Tisch online">
+    <meta name="author" content="Sameh Hamdalla">
+    <meta name="keywords" content="Reservierung, Tisch reservieren, Pizzeria HAMHAM, Online Reservierung">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styling/style.css">
+    <link rel="stylesheet" href="styling/reservierung.css">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Reservierung - Pizzeria HAMHAM</title>
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="HAMHAM Logo" class="logo">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="menu.html">Speisekarte</a></li>
+                <li><a href="openhours.html">Öffnungszeiten</a></li>
+                <li><a href="reservierung.html" class="active">Reservierung</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== RESERVATION CONTENT ===== -->
+        <div class="reservation-content">
+            <div class="page-header">
+                <h1>Online Reservierung</h1>
+                <p>Benvenuti in der Pizzeria HAMHAM!</p>
+            </div>
+
+            <div class="welcome-text">
+                <p>Sie haben gehört, dass es bei uns besonders leckere Pizza gibt und jedes Gericht mit viel Liebe zubereitet wird?</p>
+                <p>Dann sind Sie bei uns genau richtig! Bei uns erwartet Sie eine kleine Auszeit mit italienischem Flair, frischen Zutaten und echter Gastfreundschaft.</p>
+                <p>Wir freuen uns schon jetzt darauf, Sie bei uns begrüßen zu dürfen und Sie mit gutem Essen und einer gemütlichen Atmosphäre zu verwöhnen.</p>
+                <p class="signature">Ihre Pizzeria HAMHAM</p>
+            </div>
+
+            <!-- Reservation Form -->
+            <div class="form-container">
+                <form action="#" method="post" class="reservation-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Ihr Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-Mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefonnummer *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="01234 567890">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Datum *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Uhrzeit *</label>
+                        <input type="time" id="time" name="time" min="15:30" max="20:00" step="900" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Anzahl der Gäste *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Bitte wählen</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Personen</option>
+                            <option value="3">3 Personen</option>
+                            <option value="4">4 Personen</option>
+                            <option value="5">5 Personen</option>
+                            <option value="6">6 Personen</option>
+                            <option value="7">7 Personen</option>
+                            <option value="8">8 Personen</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="wishes">Besondere Wünsche</label>
+                        <textarea id="wishes" name="wishes" rows="4" placeholder="z.B. Kinderstuhl, Geburtstag, Allergien"></textarea>
+                    </div>
+
+                    <div class="form-info">
+                        <p>Reservierungen sind zwischen 15:30 und 20:00 Uhr möglich.</p>
+                        <p>Montag ist Ruhetag – keine Reservierungen möglich.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-reserve">Jetzt reservieren</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>Alle Preise in Euro inkl. gesetzlicher Mehrwertsteuer.</p>
+        <p>Wir freuen uns auf Ihren Besuch!</p>
+        <p class="copyright">&copy; 2025 Pizzeria HAMHAM. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* ===== HOURS CONTENT ===== */
+.hours-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-header p {
+    font-size: clamp(16px, 2.5vw, 20px);
+    opacity: 0.9;
+}
+
+/* ===== HOURS GRID ===== */
+.hours-container {
+    margin: 40px 0 60px;
+}
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.day {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.day:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+.day.closed {
+    background-color: rgba(255, 99, 71, 0.2);
+    border-color: rgba(255, 99, 71, 0.4);
+}
+
+.day-name {
+    display: block;
+    font-size: clamp(18px, 2.5vw, 22px);
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.day-time {
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+/* ===== CONTACT INFO ===== */
+.contact-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+}
+
+.contact-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 4vw, 32px);
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    font-size: clamp(16px, 2vw, 20px);
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.address-box {
+    max-width: 400px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.address-box p {
+    margin-bottom: 8px;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.address-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hours-content {
+        padding: 15px;
+    }
+
+    .hours-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .day {
+        padding: 20px;
+    }
+}
